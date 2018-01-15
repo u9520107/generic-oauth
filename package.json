@@ -1,7 +1,13 @@
 {
-  "dependencies": {},
+  "dependencies": {
+    "url-parse": "^1.2.0"
+  },
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
+    "execa": "^0.8.0",
+    "fs-extra": "^5.0.0",
+    "http-server": "^0.11.1",
+    "npx": "^9.7.1",
     "parcel-bundler": "^1.4.1"
   },
   "name": "generic-oauth",
@@ -9,6 +15,8 @@
   "version": "1.0.0",
   "main": "none",
   "scripts": {
+    "start": "node ./scripts/server",
+    "build": "node ./scripts/build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
